@@ -12,7 +12,7 @@
 
 ## TODO list:
 ### Performace
-- Add a 'cache' table for the calendar dates
+- Add a 'cache/snapshot' table for the calendar dates
 - Use Domain Events to trigger sync after a calendar item is saved to update the calendar dates cache
 - Use simple framework like Dapper to extract the calendar availability
 - Add Idempotency to the commands
