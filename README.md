@@ -1,5 +1,15 @@
 # FantasticStay .Net Developer Task
 
+## Used architecture and patterns
+- Doamin-Driven Development
+- CQRS
+- Mediator
+- Entities, Object Values and Enumerations
+- Aggregate Root
+- Unit or Work
+- Event Sourcing
+- Domain POCO following the Persistence Ignorance and Infrastructure Ignorance principals
+
 ## TODO list:
 ### Performace
 - Add a 'cache' table for the calendar dates
@@ -14,3 +24,5 @@
 ### Road map
 - Use Domain Events to publish Integration Events
 - Add localization for the user masages (FantasticStayDomainException)
+- Add Docker support
+- Add cloud support like DB and Configuration stores
