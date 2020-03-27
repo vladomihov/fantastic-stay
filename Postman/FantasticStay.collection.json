@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "3c1defcf-41ee-470a-ab16-051436e0cb1e",
+		"name": "FantasticStay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "calendar",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"propertyId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44357/api/v1/calendar/create",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44357",
+							"path": [
+								"api",
+								"v1",
+								"calendar",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addAvailability",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"propertyId\": 1,\n\t\"from\": \"2020-02-13\",\n\t\"to\": \"2020-02-13\",\n\t\"amount\": 200,\n\t\"currencyId\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44357/api/v1/calendar/addAvailability",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44357",
+							"path": [
+								"api",
+								"v1",
+								"calendar",
+								"addAvailability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "blockDates",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"propertyId\": 1,\n\t\"from\": \"2020-02-13\",\n\t\"to\": \"2020-02-20\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44357/api/v1/calendar/blockDates",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44357",
+							"path": [
+								"api",
+								"v1",
+								"calendar",
+								"blockDates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAvailability",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"propertyId\": 1,\n\t\"from\": \"2020-02-02\",\n\t\"to\": \"2020-02-15\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44357/api/v1/calendar/getAvailability",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44357",
+							"path": [
+								"api",
+								"v1",
+								"calendar",
+								"getAvailability"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
