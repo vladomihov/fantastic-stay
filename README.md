@@ -8,7 +8,7 @@
 - Aggregate Root
 - Unit or Work
 - Event Sourcing
-- Domain POCO following the Persistence Ignorance and Infrastructure Ignorance principals
+- Domain Model following the Persistence Ignorance and Infrastructure Ignorance principals
 
 ## TODO list:
 ### Performace
